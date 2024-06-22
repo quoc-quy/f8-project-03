@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --header-bg: #10375C;
+    --primary-color: #2E80CE;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -9,4 +14,132 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
+    height: 10000px;
+}
+
+/* =========== Common =========== */
+.container {
+     width: 1170px;
+     max-width: calc(100% - 48px);
+     margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 400;
+    min-width: 205px;
+    line-height: 60px;
+    border: none;
+    border-radius: 999px;
+    background: var(--primary-color);
+}
+
+.btn:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+/* =========== Header =========== */
+.header {
+    min-height: 100vh;
+    background: var(--header-bg);
+}
+
+.header-top {
+    padding: 30px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1rem;
+    position: relative;
+    display: inline-flex;
+}
+
+.logo__circle::before,
+.logo__circle::after  {
+    content: "";
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.logo__circle::before {
+    width: 3em;
+    height: 3em;
+    background: #2E80CE;
+}
+
+.logo__circle::after {
+    position: absolute;
+    top: 1.1em;
+    left: 1.1em;
+    width: 1.6em;
+    height: 1.6em;
+    background: #fff;
+}
+
+.logo__text {
+    margin-left: 0.6em;
+    text-align: right   ;
+}
+
+.logo__branch {
+    display: block;
+    color: #FFF;
+    font-size: 1.8em;
+    font-weight: 400;
+}
+
+.logo__branch--small {
+    font-size: 1.2em;
+    font-weight: 300;
+}
+
+.navbar__list {
+    display: flex;
+    gap: 42px;
+}
+
+.navbar__link {
+    color: #C9D2DA;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.navbar__link--active {
+    color: #FFF;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.navbar__link--active::before {
+    content: "";
+    display: inline-block;
+    margin-right: 8px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.action__login {
+    color: #C9D2DA;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
+}
+
+.action_signup {
+    margin-left: 28px;
+    min-width: 104px;
+    line-height: 44px;
+    font-size: 1.6rem;
 }
