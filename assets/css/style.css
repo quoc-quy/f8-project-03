@@ -29,7 +29,9 @@ a {
 }
 
 .btn {
+    display: inline-block;
     color: #fff;
+    text-align: center;
     font-size: 1.8rem;
     font-weight: 400;
     min-width: 205px;
@@ -42,6 +44,26 @@ a {
 .btn:hover {
     cursor: pointer;
     opacity: 0.8;
+}
+
+.section-heading {
+    color: #10375C;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -1px;
+}
+
+.section-desc {
+    margin: 0 auto;
+    max-width: 468px;
+    margin-top: 18px;
+    color: #575F66;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 300;
+    line-height: 1.66;
 }
 
 /* =========== Header =========== */
@@ -219,4 +241,80 @@ a {
 .hero__img:last-child {
     width: 210px;
     height: 410px;
+}
+
+/* ======= Service ======== */
+
+.service {
+    padding: 170px 0;
+}
+
+.service__row {
+    margin-top: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.service__img {
+    width: 570px;
+    height: 570px;
+    object-fit: cover;
+    border-radius: 12px;
+}
+
+.service__list {
+    margin-bottom: 55px;
+}
+
+.service-item {
+    width: 470px;
+    display: flex;
+    align-items: flex-start;
+    padding: 21px 18px 20px 22px;
+    background: #fff;
+    border-radius: 10px;
+}
+
+.service-item:hover {
+    box-shadow: 0px 14px 28px 0px rgba(0, 0, 0, 0.05);
+    cursor: pointer;
+    position: relative;
+}
+
+.service-item__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 60px;
+    height: 60px;
+    background: #EFF6FD;
+    border-radius: 50%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.05);
+    transition: 0.5s;
+}
+
+.service-item:hover .service-item__icon {
+    color: #fff;
+    background: #2E80CE;
+}
+
+.service-item__body {
+    margin-left: 19px;
+}
+
+.service-item__heading {
+    color: #10375C;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.service-item__desc {
+    margin-top: 8px;
+    color: #575F66;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: 1.75;
 }
