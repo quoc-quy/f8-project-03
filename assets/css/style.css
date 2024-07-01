@@ -638,3 +638,33 @@ a {
     font-weight: 400;
     line-height: normal;
 }
+
+/* ============= Appointment =========== */
+.appointment {
+    padding: 85px 0;
+}
+
+.appointment__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    background: #F6FBFF;
+}
+
+.aappointment__heading::after {
+    content: "";
+    display: inline-block;
+    width: 136px;
+    height: 2px;
+    background: var(--primary-color);
+}
+
+.appointment__desc {
+    max-width: 617px;
+    margin: 18px 0 38px 0;
+    color: #575F66;
+    text-align: center;
+    font-weight: 300;
+    line-height: 1.75;
+}
