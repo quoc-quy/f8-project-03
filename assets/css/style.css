@@ -14,7 +14,6 @@ html {
 body {
     font-size: 1.6rem;
     font-family: "Sora", sans-serif;
-    height: 10000px;
 }
 
 /* =========== Common =========== */
@@ -667,4 +666,121 @@ a {
     text-align: center;
     font-weight: 300;
     line-height: 1.75;
+}
+
+/* ========= Footer ========== */
+.footer {
+    margin-top: 85px;
+    padding: 100px 0 42px;
+    background: #10375C;
+    font-family: "Open Sans", sans-serif;
+}
+
+.footer__row {
+    display: grid;
+    grid-template-columns: 1fr 0.4fr 0.4fr 1fr;
+    column-gap: 78px;
+    border-bottom: 1px solid #406181;
+}
+
+.footer__desc {
+    width: 336px;
+    margin-top: 21px;
+    color: #A9B3BB;
+    font-weight: 400;
+    line-height: 1.75;
+}
+
+.footer__heading {
+    margin-bottom: 20px;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 1.75;
+}
+
+.footer__list {
+    margin-bottom: 28px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.footer__item a {
+    color: #A9B3BB;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+    white-space: nowrap;
+}
+
+.footer__social {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 28px;
+}
+
+.footer__social-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #fff;
+    color: #2E80CE;
+    transition: .5s;
+}
+
+.footer__social-btn:hover {
+    background: #2E80CE;
+    color: #fff;
+}
+
+.footer-from {
+    display: flex;  
+    column-gap: 12px;
+    margin-top: 10px;
+}
+
+.footer-from__input {
+    width: 212px;
+    height: 46px;
+    border-radius: 4px;
+    border: 1px solid #406181;
+    background: transparent;
+    outline: none;
+}
+
+.footer-from__input::placeholder {
+    color: #9CA8B1;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
+}
+
+.footer-from__submit {
+    min-width: 108px;
+    height: 46px;
+    border: 1px solid var(--primary-color);
+    border-radius: 4px;
+    background: var(--primary-color);
+    color: #fff;
+    outline: none;
+}
+
+.footer-from__submit:hover {
+    cursor: pointer;
+    opacity: 0.8;
+}
+
+.footer__copyright {
+    text-align: center;
+}
+
+.footer__copyright-text {
+    margin-top: 28px;
+    color: #AAB3BA;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.85;
 }
